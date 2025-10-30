@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentalWealth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('https://github.com/LHcode2025/MentalWealth/blob/main/background.jpg?raw=true');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-item {
+                margin-bottom: 10px;
+            }
+        }
+
+        .info-box {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 20px;
+        }
+
+        .offer-box {
+            flex: 1;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2.offer-title {
+            color: black;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .nav-link {
+            color: black;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin: 10px 0;
+        }
+
+        .offers-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    <script>
+        function scrollToContact() {
+            document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-warning p-3">
+        <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row">
+            <div class="logo text-center text-md-left">
+                <a href="index.html">
+                    <img src="https://github.com/LHcode2025/MentalWealth/blob/main/logo.png?raw=true" alt="MentalWealth Logo" class="img-fluid" style="height: 50px;">
+                </a>
+                <h1 class="mt-2" style="font-size: 3rem; color: black;">MentalWealth</h1>
+            </div>
+            <nav class="p-2 rounded">
+                <ul class="nav d-flex">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToContact()">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container text-center mt-5">
+        <div class="info-box p-4 rounded mt-4">
+            <h2 class="text-warning">What is MentalWealth?</h2>
+            <p>MentalWealth is an innovative platform designed to help individuals manage and enhance their mental health. Just as financial wealth can lead to improved quality of life, prioritizing mental well-being is equally transformative. Our goal is to provide resources, tools, and support to help users cultivate a healthier mindset, build resilience, and develop coping strategies.</p>
+        </div>
+
+        <div class="info-box p-4 rounded mt-4">
+            <h2 class="text-warning">What Can MentalWealth Do for You?</h2>
+            <p>MentalWealth offers a wide array of resources tailored to meet your unique mental health needs. Through engaging content, interactive tools, and community support, we empower you to take charge of your mental well-being. Users can access stress-management techniques, mindfulness exercises, and personalized wellness plans, all aimed at fostering a positive mental state. By integrating mental health practices into your daily routine, you can enhance not only your emotional resilience but also your overall quality of life.</p>
+        </div>
+
+        <div class="info-box p-4 rounded mt-4">
+            <h2 class="text-warning">How Does Mental Health Relate to Wealth?</h2>
+            <p>Mental health is intricately linked to financial health, as the two influence one another in profound ways. Just as investing in your financial future requires knowledge and strategy, investing time and energy into mental well-being can lead to a richer, more fulfilling life. When you prioritize mental health, you often find yourself better equipped to handle financial challenges, make sound decisions, and pursue opportunities. In essence, a strong mental foundation can pave the way for improved financial success, promoting a holistic approach to a balanced life.</p>
+        </div>
+
+        <div class="offers-container">
+            <div class="offer-box">
+                <h3>Resource Hub</h3>
+                <p>Access a comprehensive library of articles, tools, and resources to support your mental health journey.</p>
+            </div>
+            <div class="offer-box">
+                <h3>Community Support</h3>
+                <p>Join groups and forums to connect with others sharing similar experiences and challenges.</p>
+            </div>
+            <div class="offer-box">
+                <h3>Expert Guidance</h3>
+                <p>Get advice and insights from certified mental health professionals to help you achieve your goals.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-info">
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@mentalwealth.com</p>
+                <p>Address: 123 Wellness St., Mind City, MW 12345</p>
+            </div>
+            <p>&copy; 2025 MentalWealth. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html> 
