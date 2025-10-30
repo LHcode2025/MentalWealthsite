@@ -1,8 +1,8 @@
-# MentalWealthsite
+# MentalWealth
 
 ### **Project Overview**
 
-MentalWealth is a project created to demonstrate key HTML and CSS skills, focusing on the important topic of mental health. The website employs a calming color palette and engaging layout to provide users with a seamless experience while disseminating valuable information.
+MentalWealth is a project created to demonstrate key HTML and CSS skills, focusing on the important topic of mental health. The website employs a nice color palette and engaging layout to provide users with a seamless experience while disseminating valuable information.
 ---
 ### **Features**
 
@@ -18,4 +18,7 @@ MentalWealth is a project created to demonstrate key HTML and CSS skills, focusi
 | **Contact Information** | Displays contact details including phone number, email, and address. |
 | **Footer** | A consistent footer that includes contact information while maintaining the site's design integrity. |
 ---
+### **Additional Features**
 
+- **Fully Responsive Layout**: The site adapts to various screen sizes, ensuring an optimal viewing experience.
+- **Accessibility**: The website has been checked for accessibility compliance.
