@@ -42,16 +42,12 @@
             border-radius: 10px;
         }
 
-        h2.offer-title {
-            color: black;
-        }
-
         nav {
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: transparent; /* Makes navbar blend with background */
         }
 
         .nav-link {
-            color: black;
+            color: white; /* Change nav link color to white */
         }
 
         footer {
@@ -72,6 +68,13 @@
         }
     </style>
     <script>
+        function scrollToSection(section) {
+            const element = document.getElementById(section);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
         function scrollToContact() {
             document.getElementById("contact").scrollIntoView({ behavior: 'smooth' });
         }
@@ -89,56 +92,54 @@
             </div>
             <nav class="p-2 rounded">
                 <ul class="nav d-flex">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('offers')">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('about')">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToContact()">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container text-center mt-5">
-        <div class="info-box p-4 rounded mt-4">
+        <div class="info-box p-4 rounded mt-4" id="offers">
             <h2 class="text-warning">What is MentalWealth?</h2>
             <p>MentalWealth is an innovative platform designed to help individuals manage and enhance their mental health. Just as financial wealth can lead to improved quality of life, prioritizing mental well-being is equally transformative. Our goal is to provide resources, tools, and support to help users cultivate a healthier mindset, build resilience, and develop coping strategies.</p>
         </div>
 
-        <div class="info-box p-4 rounded mt-4">
-            <h2 class="text-warning">What Can MentalWealth Do for You?</h2>
-            <p>MentalWealth offers a wide array of resources tailored to meet your unique mental health needs. Through engaging content, interactive tools, and community support, we empower you to take charge of your mental well-being. Users can access stress-management techniques, mindfulness exercises, and personalized wellness plans, all aimed at fostering a positive mental state. By integrating mental health practices into your daily routine, you can enhance not only your emotional resilience but also your overall quality of life.</p>
+       <div class="info-box p-4 rounded mt-4">
+    <h2 class="text-warning">What Can MentalWealth Do for You?</h2>
+    <p>MentalWealth offers a wide array of resources tailored to meet your unique mental health needs. Through engaging content, interactive tools, and community support, we empower you to take charge of your mental well-being. Users can access stress-management techniques, mindfulness exercises, and personalized wellness plans, all aimed at fostering a positive mental state. By integrating mental health practices into your daily routine, you can enhance not only your emotional resilience but also your overall quality of life.</p>
+</div>
+<div class="info-box p-4 rounded mt-4">
+            <h2 class="text-warning">How Does Mental Health Relate to Wealth?</h2>
+            <p>Mental health is intricately linked to financial health, as the two influence one another in profound ways. Just as investing in your financial future requires knowledge and strategy, investing time and energy into mental well-being can lead to a richer, more fulfilling life. When you prioritize mental health, you often find yourself better equipped to handle financial challenges, make sound decisions, and pursue opportunities. In essence, a strong mental foundation can pave the way for improved financial success, promoting a holistic approach to a balanced life.</p>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rx2c31kArCg" frameborder="0" allowfullscreen></iframe>
         </div>
 
-        <div class="info-box p-4 rounded mt-4">
-    <h2 class="text-warning">How Does Mental Health Relate to Wealth?</h2>
-    <p>Mental health is intricately linked to financial health, as the two influence one another in profound ways. Just as investing in your financial future requires knowledge and strategy, investing time and energy into mental well-being can lead to a richer, more fulfilling life. When you prioritize mental health, you often find yourself better equipped to handle financial challenges, make sound decisions, and pursue opportunities. In essence, a strong mental foundation can pave the way for improved financial success, promoting a holistic approach to a balanced life.</p>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rx2c31kArCg" frameborder="0" allowfullscreen></iframe>
-</div>
+        <div class="info-box p-4 rounded mt-4" id="offers">
+            <h2 class="text-warning text-center">What MentalWealth Offers</h2>
+            <div class="offer-box">
+                <h3>Resource Hub</h3>
+                <p>Access a comprehensive library of articles, tools, and resources to support your mental health journey.</p>
+            </div>
+            <div class="offer-box">
+                <h3>Community Support</h3>
+                <p>Join groups and forums to connect with others sharing similar experiences and challenges.</p>
+            </div>
+            <div class="offer-box">
+                <h3>Expert Guidance</h3>
+                <p>Get advice and insights from certified mental health professionals to help you achieve your goals.</p>
+            </div>
+        </div>
 
+        <div class="info-box p-4 rounded mt-4" id="about">
+            <h2 class="text-warning">About MentalWealth</h2>
+            <p>MentalWealth was founded in 2025 with a simple yet powerful vision: to prioritize mental health alongside physical health and financial wellness. Recognizing the profound impact mental well-being has on overall quality of life, we set out to create a supportive platform for individuals seeking to enhance their mental health.</p>
+            <p>Our mission is to empower users by providing accessible resources, expert insights, and a vibrant community that fosters connection and understanding. At MentalWealth, we believe that investing in mental well-being is essential for a richer, more fulfilling life.</p>
+        </div>
 
-       <div class="info-box p-4 rounded mt-4">
-    <h2 class="text-warning text-center">What MentalWealth Offers</h2>
-    <div class="offer-box">
-        <h3>Resource Hub</h3>
-        <p>Access a comprehensive library of articles, tools, and resources to support your mental health journey.</p>
-    </div>
-    <div class="offer-box">
-        <h3>Community Support</h3>
-        <p>Join groups and forums to connect with others sharing similar experiences and challenges.</p>
-    </div>
-    <div class="offer-box">
-        <h3>Expert Guidance</h3>
-        <p>Get advice and insights from certified mental health professionals to help you achieve your goals.</p>
-    </div>
-</div>
-
-        <div class="info-box p-4 rounded mt-4">
-    <h2 class="text-warning">About MentalWealth</h2>
-    <p>MentalWealth was founded in 2025 with a simple yet powerful vision: to prioritize mental health alongside physical health and financial wellness. Recognizing the profound impact mental well-being has on overall quality of life, we set out to create a supportive platform for individuals seeking to enhance their mental health.</p>
-    <p>Our mission is to empower users by providing accessible resources, expert insights, and a vibrant community that fosters connection and understanding. At MentalWealth, we believe that investing in mental well-being is essential for a richer, more fulfilling life.</p>
-</div>
-
-        <footer>
+        <footer id="contact">
             <div class="contact-info">
                 <p>Phone: (123) 456-7890</p>
                 <p>Email: contact@mentalwealth.com</p>
@@ -149,4 +150,4 @@
     </main>
 </body>
 
-</html> 
+</html>
