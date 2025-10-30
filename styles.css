@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('github.com/LHcode2025/MentalWealth/blob/main/background.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    overflow: auto; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top:   
